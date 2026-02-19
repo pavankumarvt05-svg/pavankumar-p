@@ -1,11 +1,31 @@
-<div align="center">
+# Lumina Library Management System
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Setup Instructions
 
-  <h1>Built with AI Studio</h2>
+1. **Environment Variables**:
+   Ensure `GEMINI_API_KEY` is set in your environment (handled by AI Studio).
+   The app uses SQLite, so no external database setup is required.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+2. **Installation**:
+   The system automatically installs dependencies. If needed, run:
+   ```bash
+   npm install
+   ```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+3. **Running the App**:
+   The app runs in full-stack mode. The server handles both API and frontend serving.
+   ```bash
+   npm run dev
+   ```
 
-</div>
+4. **Admin Credentials**:
+   - **Username**: admin
+   - **Password**: admin123
+   (These are initialized in the database on first run)
+
+## Features
+- **Dashboard**: Real-time summary of library stats.
+- **Books**: Full CRUD for book inventory.
+- **Students**: Register and manage student records.
+- **Issuing**: Issue books with automated quantity tracking.
+- **Returns**: Return books with automated fine calculation (₹2/day after 7 days).

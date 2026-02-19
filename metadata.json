@@ -1,0 +1,5 @@
+{
+  "name": "Lumina Library Management System",
+  "description": "A comprehensive library management system with admin dashboard, book tracking, student registration, and automated fine calculation.",
+  "requestFramePermissions": []
+}
